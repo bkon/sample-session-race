@@ -1,0 +1,11 @@
+<div onclick="javascript: clickHandler()">CLICK ME</div>
+
+<script>
+function clickHandler() {
+  window.open("<%= test_charlie_url %>");
+
+  setTimeout(function() {
+    $.get("<%= test_bravo_url %>");
+  }, 500)
+}
+</script>
